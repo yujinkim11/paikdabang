@@ -50,6 +50,7 @@ const ConWrap = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 `;
 export const Sec4 = () => {
   return (
