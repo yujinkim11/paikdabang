@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { Scrollbar, Pagination, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 import "swiper/css";
 
 const Sec2Wrap = styled.div`
@@ -29,7 +33,10 @@ const LeftSquare = styled.div`
   font-size: 18px;
   cursor: pointer;
 `;
-const Right = styled.div``;
+const Right = styled.div`
+  width: 400px;
+  height: 400px;
+`;
 const RightCircle = styled.div`
   width: 400px;
   height: 400px;
@@ -39,11 +46,11 @@ const RightCircle = styled.div`
   align-items: center;
 `;
 const SlideWrap = styled.div`
-  width: 400px;
+  width: 100%;
   height: 400px;
   display: flex;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 50px;
 `;
 
 const Title = styled.p`
@@ -66,7 +73,13 @@ export const Sec2 = () => {
       </Left>
       <Right>
         <RightCircle>
-          <Swiper spaceBetween={50} slidesPerView={1}>
+          <Swiper
+            modules={[Navigation, Pagination, Scrollbar]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            pagination={{ clickable: true }}
+          >
             <SwiperSlide>
               <SlideWrap>
                 <Title>원조빽스치노</Title>
@@ -93,7 +106,7 @@ export const Sec2 = () => {
             </SwiperSlide>
             <SwiperSlide>
               <SlideWrap>
-                <Title>코코넛커피스무디</Title>
+                <Title>코코넛커피</Title>
                 <Img>
                   <img
                     src="https://paikdabang.com/wp-content/uploads/2022/06/%EC%BD%94%EC%BD%94%EB%84%9B%EC%8A%A4%EB%AC%B4%EB%94%94-450x588.png"
