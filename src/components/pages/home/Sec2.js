@@ -6,6 +6,7 @@ const Sec2Wrap = styled.div`
   height: 60vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 `;
 const Left = styled.div`
   margin-right: 150px;
