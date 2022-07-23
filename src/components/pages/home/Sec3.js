@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { mainStyle } from "../../../styles/globalStyle";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Sec3Wrap = styled.div`
   padding: ${mainStyle.padding};
@@ -61,19 +64,34 @@ const Img3 = styled.div`
 `;
 
 export const Sec3 = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Sec3Wrap>
       <Title>PAIK'S COFFEE</Title>
       <ConWrap>
-        <Con1>
+        <Con1
+          data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="7000"
+        >
           <p>싸다!</p>
           <Img1></Img1>
         </Con1>
-        <Con2>
+        <Con2
+          data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="7000"
+        >
           <p>크다!</p>
           <Img2></Img2>
         </Con2>
-        <Con3>
+        <Con3
+          data-aos="fade-down"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="7000"
+        >
           <p>맛있다!</p>
           <Img3></Img3>
         </Con3>

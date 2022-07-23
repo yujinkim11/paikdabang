@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Sec4Wrap = styled.div`
   margin-top: 100px;
@@ -53,11 +56,18 @@ const ConWrap = styled.div`
   cursor: pointer;
 `;
 export const Sec4 = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <Sec4Wrap>
       <Bg>
         <BlackBg>
-          <Content>
+          <Content
+            data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="500"
+          >
             <h3>PAIK’S COFFEE STORY</h3>
             <p>균형잡힌 바디감으로 긴여운을 남기는 빽다방 커피를 만나보세요.</p>
             <ConWrap>더보기 +</ConWrap>
