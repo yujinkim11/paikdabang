@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar } from "swiper";
+import { Autoplay } from "swiper";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -50,11 +51,12 @@ export const Sec1 = () => {
   return (
     <Sec1Wrap>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar]}
+        modules={[Navigation, Pagination, Scrollbar, Autoplay]}
         spaceBetween={50}
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
+        autoplay={{ delay: 3000 }}
       >
         <SwiperSlide>
           <Banner1 />

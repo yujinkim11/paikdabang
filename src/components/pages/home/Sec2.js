@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { mainStyle } from "../../../styles/globalStyle";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
 
 const Sec2Wrap = styled.div`
   padding: 0 500px;
@@ -36,27 +38,21 @@ const RightCircle = styled.div`
   display: flex;
   align-items: center;
 `;
-
-const ConWrap = styled.div`
-  margin-left: 15px;
+const SlideWrap = styled.div`
+  width: 400px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
 `;
 
-const Title = styled.div`
-  font-size: 30px;
+const Title = styled.p`
+  font-size: 22px;
   font-weight: 700;
   color: white;
-  margin-bottom: 10px;
 `;
-const Con = styled.div`
-  font-size: 20px;
-  color: white;
-`;
-const Img = styled.div`
-  width: 200px;
-  height: 350px;
-  background: url(https://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8-SOFT-450x588.png)
-    no-repeat center / cover;
-`;
+
+const Img = styled.div``;
 
 export const Sec2 = () => {
   return (
@@ -70,12 +66,56 @@ export const Sec2 = () => {
       </Left>
       <Right>
         <RightCircle>
-          <ConWrap>
-            <Title>원조 빽스치노</Title>
-            <Con>매력만점 커피 빽스치노</Con>
-          </ConWrap>
-
-          <Img></Img>
+          <Swiper spaceBetween={50} slidesPerView={1}>
+            <SwiperSlide>
+              <SlideWrap>
+                <Title>원조빽스치노</Title>
+                <Img>
+                  <img
+                    src="https://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8-SOFT-450x588.png"
+                    width="250px"
+                    height="350px"
+                  />
+                </Img>
+              </SlideWrap>
+            </SwiperSlide>
+            <SwiperSlide>
+              <SlideWrap>
+                <Title>퐁당치노</Title>
+                <Img>
+                  <img
+                    src="https://paikdabang.com/wp-content/uploads/2018/05/%ED%90%81%EB%8B%B9%EC%B9%98%EB%85%B8_%EB%B0%94%EB%8B%90%EB%9D%BC-450x588.png"
+                    width="250px"
+                    height="350px"
+                  />
+                </Img>
+              </SlideWrap>
+            </SwiperSlide>
+            <SwiperSlide>
+              <SlideWrap>
+                <Title>코코넛커피스무디</Title>
+                <Img>
+                  <img
+                    src="https://paikdabang.com/wp-content/uploads/2022/06/%EC%BD%94%EC%BD%94%EB%84%9B%EC%8A%A4%EB%AC%B4%EB%94%94-450x588.png"
+                    width="250px"
+                    height="350px"
+                  />
+                </Img>
+              </SlideWrap>
+            </SwiperSlide>
+            <SwiperSlide>
+              <SlideWrap>
+                <Title>노말한소프트</Title>
+                <Img>
+                  <img
+                    src="https://paikdabang.com/wp-content/uploads/2018/05/%EB%85%B8%EB%A7%90%ED%95%9C%EC%86%8C%ED%94%84%ED%8A%B8-3-450x588.png"
+                    width="250px"
+                    height="350px"
+                  />
+                </Img>
+              </SlideWrap>
+            </SwiperSlide>
+          </Swiper>
         </RightCircle>
       </Right>
     </Sec2Wrap>
