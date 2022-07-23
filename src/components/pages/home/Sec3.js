@@ -34,18 +34,30 @@ const Img1 = styled.div`
   height: 208px;
   background: url(https://paikdabang.com/wp-content/themes/paikdabang/assets/images/about1.png)
     no-repeat center / cover;
+  :hover {
+    transform: scale(110%);
+    transition: 1s;
+  }
 `;
 const Img2 = styled.div`
   width: 203px;
   height: 208px;
   background: url(https://paikdabang.com/wp-content/themes/paikdabang/assets/images/about2.png)
     no-repeat center / cover;
+  :hover {
+    transform: scale(110%);
+    transition: 1s;
+  }
 `;
 const Img3 = styled.div`
   width: 203px;
   height: 208px;
   background: url(http://paikdabang.com/wp-content/uploads/2021/05/%EC%9B%90%EB%91%90%EA%B5%90%EC%B2%B4.png)
     no-repeat center / cover;
+  :hover {
+    transform: scale(110%);
+    transition: 1s;
+  }
 `;
 
 export const Sec3 = () => {
