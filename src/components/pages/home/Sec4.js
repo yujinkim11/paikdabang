@@ -2,9 +2,14 @@ import styled from "styled-components";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { mainStyle } from "../../../styles/globalStyle";
 
 const Sec4Wrap = styled.div`
   margin-top: 100px;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: ${mainStyle.moPadding};
+  }
 `;
 const Bg = styled.div`
   width: 100%;

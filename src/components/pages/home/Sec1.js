@@ -9,7 +9,11 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/autoplay";
 
-const Sec1Wrap = styled.div``;
+const Sec1Wrap = styled.div`
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
+`;
 
 const Banner1 = styled.div`
   width: 100%;

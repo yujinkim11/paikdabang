@@ -9,6 +9,10 @@ const Sec3Wrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: ${mainStyle.moPadding};
+  }
 `;
 const Title = styled.div`
   font-size: 50px;

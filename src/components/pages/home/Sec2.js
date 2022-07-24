@@ -13,6 +13,9 @@ const Sec2Wrap = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 const Left = styled.div`
   margin-right: 150px;

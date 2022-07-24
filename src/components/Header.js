@@ -5,10 +5,14 @@ import { mainStyle } from "../styles/globalStyle";
 const HeaderWrap = styled.div`
   width: 100%;
   height: 140px;
-
   color: #1d1d1d;
   a {
     color: #1d1d1d;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 80px;
   }
 `;
 
@@ -32,16 +36,27 @@ const Section1 = styled.div`
     height: 20px;
     margin-left: 10px;
   }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: ${mainStyle.moPadding};
+  }
 `;
 
 const Logo = styled.div`
   width: 194px;
   height: 64px;
   margin-right: 300px;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Menu = styled.p`
   font-size: 20px;
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    margin-right: 9px;
+  }
 `;
 
 const Section2 = styled.div`
@@ -50,6 +65,10 @@ const Section2 = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: ${mainStyle.padding};
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: ${mainStyle.moPadding};
+  }
 `;
 
 export const Header = () => {

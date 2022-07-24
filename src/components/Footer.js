@@ -9,24 +9,40 @@ const FooterWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: ${mainStyle.moPadding};
+  }
 `;
 
 const ConWrap = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    padding: ${mainStyle.moPadding};
+    font-size: 12px;
+    text-align: center;
+  }
 `;
 
 const Logo = styled.div`
   width: 180px;
   height: 48px;
   margin-right: 100px;
+  @media screen and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const Right = styled.div`
   font-size: 16px;
   color: #071e61;
   line-height: 25px;
+  @media screen and (max-width: 500px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 `;
 
 const Copy = styled.p`
