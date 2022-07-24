@@ -11,8 +11,8 @@ const HeaderWrap = styled.div`
   }
   @media screen and (max-width: 500px) {
     width: 100%;
-    height: 60px;
-    margin-bottom: 80px;
+    height: 50px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -36,9 +36,26 @@ const Section1 = styled.div`
     height: 20px;
     margin-left: 10px;
   }
+
   @media screen and (max-width: 500px) {
     width: 100%;
     padding: ${mainStyle.moPadding};
+    span {
+      margin-left: 20px;
+      &:nth-child(2) {
+        margin-right: 10px;
+      }
+    }
+  }
+`;
+
+const MoLogo = styled.div`
+  display: none;
+  @media screen and (max-width: 500px) {
+    display: block;
+    width: 100px;
+    height: 35px;
+    margin-right: 20px;
   }
 `;
 
@@ -56,6 +73,8 @@ const Menu = styled.p`
   @media screen and (max-width: 500px) {
     font-size: 15px;
     margin-right: 9px;
+    margin-top: -50px;
+    font-weight: 700;
   }
 `;
 
@@ -75,6 +94,13 @@ export const Header = () => {
   return (
     <HeaderWrap>
       <Section1>
+        <Link to="#">
+          <MoLogo
+            style={{
+              background: `url(https://paikdabang.com/wp-content/themes/paikdabang/assets/images/logo.png) no-repeat center / cover`,
+            }}
+          ></MoLogo>
+        </Link>
         <span>더본코리아</span>
         <span>매장찾기</span>
         <Link to="https://ko-kr.facebook.com/ipaikscoffee/">

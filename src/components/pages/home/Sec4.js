@@ -2,13 +2,11 @@ import styled from "styled-components";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { mainStyle } from "../../../styles/globalStyle";
 
 const Sec4Wrap = styled.div`
   margin-top: 100px;
   @media screen and (max-width: 500px) {
     width: 100%;
-    padding: ${mainStyle.moPadding};
   }
 `;
 const Bg = styled.div`
@@ -18,6 +16,9 @@ const Bg = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 -100px;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 const BlackBg = styled.div`
   width: 100%;
@@ -27,6 +28,9 @@ const BlackBg = styled.div`
   :hover {
     background-color: rgba(0, 0, 0, 0.6);
     transition: 1s;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
   }
 `;
 
@@ -46,6 +50,17 @@ const Content = styled.div`
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 100px;
+  }
+  @media screen and (max-width: 500px) {
+    text-align: center;
+    h3 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 60px;
+    }
   }
 `;
 

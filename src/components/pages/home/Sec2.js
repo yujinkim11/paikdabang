@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css";
+import { mainStyle } from "../../../styles/globalStyle";
 
 const Sec2Wrap = styled.div`
   padding: 0 500px;
@@ -15,15 +16,29 @@ const Sec2Wrap = styled.div`
   justify-content: center;
   @media screen and (max-width: 500px) {
     width: 100%;
+    padding: ${mainStyle.moPadding};
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
 const Left = styled.div`
   margin-right: 150px;
+  @media screen and (max-width: 500px) {
+    margin-top: 200px;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 const LeftTitle = styled.div`
   font-size: 50px;
   font-weight: 900;
   margin-bottom: 30px;
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
 `;
 const LeftSquare = styled.div`
   width: 105px;
@@ -35,10 +50,17 @@ const LeftSquare = styled.div`
   align-items: center;
   font-size: 18px;
   cursor: pointer;
+  @media screen and (max-width: 500px) {
+  }
 `;
 const Right = styled.div`
   width: 400px;
   height: 400px;
+  @media screen and (max-width: 500px) {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+  }
 `;
 const RightCircle = styled.div`
   width: 400px;
@@ -47,6 +69,10 @@ const RightCircle = styled.div`
   border-radius: 50%;
   display: flex;
   align-items: center;
+  @media screen and (max-width: 500px) {
+    width: 300px;
+    height: 300px;
+  }
 `;
 const SlideWrap = styled.div`
   width: 100%;
@@ -60,9 +86,24 @@ const Title = styled.p`
   font-size: 22px;
   font-weight: 700;
   color: white;
+  @media screen and (max-width: 500px) {
+    font-size: 24px;
+  }
 `;
 
-const Img = styled.div``;
+const Img = styled.div`
+  img {
+    width: 250px;
+    height: 350px;
+  }
+  @media screen and (max-width: 500px) {
+    img {
+      width: 170px;
+      height: 250px;
+      margin-left: -20px;
+    }
+  }
+`;
 
 export const Sec2 = () => {
   return (
@@ -87,11 +128,7 @@ export const Sec2 = () => {
               <SlideWrap>
                 <Title>원조빽스치노</Title>
                 <Img>
-                  <img
-                    src="https://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8-SOFT-450x588.png"
-                    width="250px"
-                    height="350px"
-                  />
+                  <img src="https://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8-SOFT-450x588.png" />
                 </Img>
               </SlideWrap>
             </SwiperSlide>

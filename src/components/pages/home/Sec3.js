@@ -12,12 +12,16 @@ const Sec3Wrap = styled.div`
   @media screen and (max-width: 500px) {
     width: 100%;
     padding: ${mainStyle.moPadding};
+    margin-top: 250px;
   }
 `;
 const Title = styled.div`
   font-size: 50px;
   font-weight: 900;
   margin-bottom: 30px;
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
 `;
 const ConWrap = styled.div`
   margin-top: 50px;
@@ -31,10 +35,26 @@ const ConWrap = styled.div`
     text-align: center;
     margin-bottom: 30px;
   }
+  @media screen and (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
-const Con1 = styled.div``;
-const Con2 = styled.div``;
-const Con3 = styled.div``;
+const Con1 = styled.div`
+  @media screen and (max-width: 500px) {
+    margin-bottom: 50px;
+  }
+`;
+const Con2 = styled.div`
+  @media screen and (max-width: 500px) {
+    margin-bottom: 50px;
+  }
+`;
+const Con3 = styled.div`
+  @media screen and (max-width: 500px) {
+    margin-bottom: 50px;
+  }
+`;
 
 const Img1 = styled.div`
   width: 203px;
