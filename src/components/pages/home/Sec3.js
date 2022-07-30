@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Sec3Wrap = styled.div`
+  width: 100%;
   padding: ${mainStyle.padding};
   display: flex;
   flex-direction: column;
