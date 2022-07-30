@@ -8,9 +8,14 @@ import "swiper/css/scrollbar";
 import "swiper/css";
 import { mainStyle } from "../../../styles/globalStyle";
 
+const Section2Wrap = styled.div`
+  width: 100%;
+`;
+
 const Sec2Wrap = styled.div`
+  width: 100%;
   padding: 0 500px;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,70 +112,72 @@ const Img = styled.div`
 
 export const Sec2 = () => {
   return (
-    <Sec2Wrap>
-      <Left>
-        <LeftTitle>
-          <span>Paik's</span> <br />
-          <span>Best Menu</span>
-        </LeftTitle>
-        <LeftSquare>more</LeftSquare>
-      </Left>
-      <Right>
-        <RightCircle>
-          <Swiper
-            modules={[Navigation, Pagination, Scrollbar]}
-            spaceBetween={50}
-            slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
-          >
-            <SwiperSlide>
-              <SlideWrap>
-                <Title>원조빽스치노</Title>
-                <Img>
-                  <img src="https://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8-SOFT-450x588.png" />
-                </Img>
-              </SlideWrap>
-            </SwiperSlide>
-            <SwiperSlide>
-              <SlideWrap>
-                <Title>퐁당치노</Title>
-                <Img>
-                  <img
-                    src="https://paikdabang.com/wp-content/uploads/2018/05/%ED%90%81%EB%8B%B9%EC%B9%98%EB%85%B8_%EB%B0%94%EB%8B%90%EB%9D%BC-450x588.png"
-                    width="250px"
-                    height="350px"
-                  />
-                </Img>
-              </SlideWrap>
-            </SwiperSlide>
-            <SwiperSlide>
-              <SlideWrap>
-                <Title>코코넛커피</Title>
-                <Img>
-                  <img
-                    src="https://paikdabang.com/wp-content/uploads/2022/06/%EC%BD%94%EC%BD%94%EB%84%9B%EC%8A%A4%EB%AC%B4%EB%94%94-450x588.png"
-                    width="250px"
-                    height="350px"
-                  />
-                </Img>
-              </SlideWrap>
-            </SwiperSlide>
-            <SwiperSlide>
-              <SlideWrap>
-                <Title>노말한소프트</Title>
-                <Img>
-                  <img
-                    src="https://paikdabang.com/wp-content/uploads/2018/05/%EB%85%B8%EB%A7%90%ED%95%9C%EC%86%8C%ED%94%84%ED%8A%B8-3-450x588.png"
-                    width="250px"
-                    height="350px"
-                  />
-                </Img>
-              </SlideWrap>
-            </SwiperSlide>
-          </Swiper>
-        </RightCircle>
-      </Right>
-    </Sec2Wrap>
+    <Section2Wrap>
+      <Sec2Wrap>
+        <Left>
+          <LeftTitle>
+            <span>Paik's</span> <br />
+            <span>Best Menu</span>
+          </LeftTitle>
+          <LeftSquare>more</LeftSquare>
+        </Left>
+        <Right>
+          <RightCircle>
+            <Swiper
+              modules={[Navigation, Pagination, Scrollbar]}
+              spaceBetween={50}
+              slidesPerView={1}
+              navigation
+              pagination={{ clickable: true }}
+            >
+              <SwiperSlide>
+                <SlideWrap>
+                  <Title>원조빽스치노</Title>
+                  <Img>
+                    <img src="https://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8-SOFT-450x588.png" />
+                  </Img>
+                </SlideWrap>
+              </SwiperSlide>
+              <SwiperSlide>
+                <SlideWrap>
+                  <Title>퐁당치노</Title>
+                  <Img>
+                    <img
+                      src="https://paikdabang.com/wp-content/uploads/2018/05/%ED%90%81%EB%8B%B9%EC%B9%98%EB%85%B8_%EB%B0%94%EB%8B%90%EB%9D%BC-450x588.png"
+                      width="250px"
+                      height="350px"
+                    />
+                  </Img>
+                </SlideWrap>
+              </SwiperSlide>
+              <SwiperSlide>
+                <SlideWrap>
+                  <Title>코코넛커피</Title>
+                  <Img>
+                    <img
+                      src="https://paikdabang.com/wp-content/uploads/2022/06/%EC%BD%94%EC%BD%94%EB%84%9B%EC%8A%A4%EB%AC%B4%EB%94%94-450x588.png"
+                      width="250px"
+                      height="350px"
+                    />
+                  </Img>
+                </SlideWrap>
+              </SwiperSlide>
+              <SwiperSlide>
+                <SlideWrap>
+                  <Title>노말한소프트</Title>
+                  <Img>
+                    <img
+                      src="https://paikdabang.com/wp-content/uploads/2018/05/%EB%85%B8%EB%A7%90%ED%95%9C%EC%86%8C%ED%94%84%ED%8A%B8-3-450x588.png"
+                      width="250px"
+                      height="350px"
+                    />
+                  </Img>
+                </SlideWrap>
+              </SwiperSlide>
+            </Swiper>
+          </RightCircle>
+        </Right>
+      </Sec2Wrap>
+    </Section2Wrap>
   );
 };
