@@ -28,11 +28,19 @@ const SwiperCon = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  .mint {
+    margin-left: 0px;
+  }
+  .last {
+    margin-left: 0;
+  }
 `;
 
 const SwiperTitle = styled.h4`
   font-size: 20px;
-  margin-left: 65px;
+  text-align: center;
+  margin-left: -50px;
 `;
 const Img = styled.div`
   width: 255px;
@@ -50,35 +58,24 @@ export const Sec5 = () => {
           slidesPerView={4}
           navigation={{ clickable: true }}
         >
-          {" "}
           <SwiperSlide>
-            <SwiperCon>
-              <Img
-                style={{
-                  background: `url(https://paikdabang.com/wp-content/uploads/2017/05/%EC%86%8C%EC%84%B8%EC%A7%80%EB%B9%B5-450x588.png) no-repeat center / cover`,
-                }}
-              />
-              <SwiperTitle>소세지빵</SwiperTitle>
-            </SwiperCon>
-          </SwiperSlide>
-          <SwiperSlide>
-            <SwiperCon>
-              <Img
-                style={{
-                  background: `url(https://paikdabang.com/wp-content/uploads/2022/06/%EC%BD%94%EC%BD%94%EB%84%9B%EB%9D%BC%EB%96%BCICED-450x588.png) no-repeat center / cover`,
-                }}
-              />
-              <SwiperTitle>원조커피</SwiperTitle>
-            </SwiperCon>
-          </SwiperSlide>
-          <SwiperSlide>
-            {" "}
             <Img
               style={{
                 background: `url(https://paikdabang.com/wp-content/uploads/2022/06/%EC%BD%94%EC%BD%94%EB%84%9B%EC%8A%A4%EB%AC%B4%EB%94%94-450x588.png) no-repeat center / cover`,
               }}
             />
             <SwiperTitle>코코넛커피스무디</SwiperTitle>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <SwiperCon>
+              <Img
+                style={{
+                  background: `url(https://paikdabang.com/wp-content/uploads/2018/06/ICED-%EB%AF%BC%ED%8A%B8%EC%B4%88%EC%BD%94%EB%9D%BC%EB%96%BC-450x588.png) no-repeat center / cover`,
+                }}
+              />
+              <SwiperTitle className="mint">민트초코라떼(ICED)</SwiperTitle>
+            </SwiperCon>
           </SwiperSlide>
           <SwiperSlide>
             {" "}
@@ -133,6 +130,16 @@ export const Sec5 = () => {
               }}
             />
             <SwiperTitle>공공치빵(초코맛)</SwiperTitle>
+          </SwiperSlide>
+          <SwiperSlide>
+            <SwiperCon>
+              <Img
+                style={{
+                  background: `url(https://paikdabang.com/wp-content/uploads/2017/05/%EC%86%8C%EC%84%B8%EC%A7%80%EB%B9%B5-450x588.png) no-repeat center / cover`,
+                }}
+              />
+              <SwiperTitle className="last">소세지빵</SwiperTitle>
+            </SwiperCon>
           </SwiperSlide>
         </Swiper>
       </Sec5ConWrap>

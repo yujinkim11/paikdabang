@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { mainStyle } from "../../../styles/globalStyle";
+import React, { useEffect } from "react";
+import AOS from "aos";
 
 const Sec6Wrap = styled.div`
   margin: 100px 0 200px 0;
@@ -53,8 +55,15 @@ const BoxCon = styled.div`
 `;
 
 export const Sec6 = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <Sec6Wrap>
+    <Sec6Wrap
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <SecBoxWrap>
         <Box
           style={{
