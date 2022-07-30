@@ -134,7 +134,10 @@ export const Sec2 = () => {
                 <SlideWrap>
                   <Title>원조빽스치노</Title>
                   <Img>
-                    <img src="https://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8-SOFT-450x588.png" />
+                    <img
+                      src="https://paikdabang.com/wp-content/uploads/2018/05/%EC%9B%90%EC%A1%B0%EB%B9%BD%EC%8A%A4%EC%B9%98%EB%85%B8-SOFT-450x588.png"
+                      alt="원조빽스치노"
+                    />
                   </Img>
                 </SlideWrap>
               </SwiperSlide>
@@ -146,6 +149,7 @@ export const Sec2 = () => {
                       src="https://paikdabang.com/wp-content/uploads/2018/05/%ED%90%81%EB%8B%B9%EC%B9%98%EB%85%B8_%EB%B0%94%EB%8B%90%EB%9D%BC-450x588.png"
                       width="250px"
                       height="350px"
+                      alt="퐁당치노"
                     />
                   </Img>
                 </SlideWrap>
@@ -158,6 +162,7 @@ export const Sec2 = () => {
                       src="https://paikdabang.com/wp-content/uploads/2022/06/%EC%BD%94%EC%BD%94%EB%84%9B%EC%8A%A4%EB%AC%B4%EB%94%94-450x588.png"
                       width="250px"
                       height="350px"
+                      alt="코코넛커피"
                     />
                   </Img>
                 </SlideWrap>
@@ -170,6 +175,7 @@ export const Sec2 = () => {
                       src="https://paikdabang.com/wp-content/uploads/2018/05/%EB%85%B8%EB%A7%90%ED%95%9C%EC%86%8C%ED%94%84%ED%8A%B8-3-450x588.png"
                       width="250px"
                       height="350px"
+                      alt="노말한소프트"
                     />
                   </Img>
                 </SlideWrap>
