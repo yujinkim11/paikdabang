@@ -4,6 +4,7 @@ import reset from "styled-reset";
 export const mainStyle = {
   padding: "0 300px",
   moPadding: "0 20px",
+  maincolor: "#071E61",
 };
 
 export const GlobalStyled = createGlobalStyle`

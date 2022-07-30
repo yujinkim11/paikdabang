@@ -41,6 +41,7 @@ const LeftTitle = styled.div`
   font-size: 50px;
   font-weight: 900;
   margin-bottom: 30px;
+  color: ${mainStyle.maincolor};
   @media screen and (max-width: 500px) {
     text-align: center;
   }
@@ -90,6 +91,7 @@ const SlideWrap = styled.div`
 const Title = styled.p`
   font-size: 22px;
   font-weight: 700;
+
   color: white;
   @media screen and (max-width: 500px) {
     font-size: 24px;

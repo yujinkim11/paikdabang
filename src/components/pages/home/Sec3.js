@@ -20,6 +20,7 @@ const Title = styled.div`
   font-size: 50px;
   font-weight: 900;
   margin-bottom: 30px;
+  color: ${mainStyle.maincolor};
   @media screen and (max-width: 500px) {
     text-align: center;
   }
@@ -35,6 +36,7 @@ const ConWrap = styled.div`
     font-weight: 700;
     text-align: center;
     margin-bottom: 30px;
+    color: ${mainStyle.maincolor};
   }
   @media screen and (max-width: 500px) {
     display: flex;
