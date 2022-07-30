@@ -14,7 +14,7 @@ const Section2Wrap = styled.div`
 
 const Sec2Wrap = styled.div`
   width: 100%;
-  padding: 0 500px;
+  padding: 0 300px;
   height: 70vh;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@ const Sec2Wrap = styled.div`
   }
 `;
 const Left = styled.div`
-  margin-right: 150px;
+  margin-right: 250px;
   @media screen and (max-width: 500px) {
     margin-top: 200px;
     margin-right: 0;

@@ -5,6 +5,7 @@ import { Sec2 } from "./Sec2";
 import { Sec3 } from "./Sec3";
 import { Sec4 } from "./Sec4";
 import { Sec5 } from "./Sec5";
+import { Sec6 } from "./Sec6";
 
 export const Home = () => {
   return (
@@ -15,6 +16,7 @@ export const Home = () => {
       <Sec3 />
       <Sec4 />
       <Sec5 />
+      <Sec6 />
       <Footer />
     </>
   );
