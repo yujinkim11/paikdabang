@@ -30,6 +30,7 @@ const BlackBg = styled.div`
   }
   @media screen and (max-width: 500px) {
     width: 100%;
+    height: 85%;
   }
 `;
 
