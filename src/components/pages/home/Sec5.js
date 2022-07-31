@@ -26,6 +26,10 @@ const Sec5Title = styled.div`
 const Sec5ConWrap = styled.div`
   width: 100%;
   padding: 50px 400px;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: 0 20px;
+  }
 `;
 
 const SwiperCon = styled.div`
@@ -41,29 +45,50 @@ const SwiperCon = styled.div`
   .last {
     margin-left: 0;
   }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 const SwiperTitle = styled.h4`
   font-size: 20px;
   text-align: center;
   margin-left: -50px;
+  @media screen and (max-width: 500px) {
+    font-size: 15px;
+    margin-left: 10px;
+  }
 `;
 const Img = styled.div`
   width: 255px;
   height: 320px;
+  @media screen and (max-width: 500px) {
+    width: 125px;
+    height: 200px;
+    margin-left: 20px;
+    padding: 0 20px;
+  }
 `;
+
+const params = {
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    },
+  },
+};
 
 export const Sec5 = () => {
   return (
     <Sec5Wrap>
       <Sec5Title>PAIK'S SIGNATURE</Sec5Title>
       <Sec5ConWrap>
-        <Swiper
-          modules={[Navigation]}
-          spaceBetween={30}
-          slidesPerView={4}
-          navigation={{ clickable: true }}
-        >
+        <Swiper modules={[Navigation]} spaceBetween={30} navigation {...params}>
           <SwiperSlide>
             <Img
               style={{
