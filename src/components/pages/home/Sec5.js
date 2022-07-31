@@ -11,11 +11,17 @@ const Sec5Wrap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 `;
 const Sec5Title = styled.div`
   font-size: 50px;
   font-weight: 900;
   color: ${mainStyle.maincolor};
+  @media screen and (max-width: 500px) {
+    text-align: center;
+  }
 `;
 const Sec5ConWrap = styled.div`
   width: 100%;

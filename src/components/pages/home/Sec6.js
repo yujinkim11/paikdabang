@@ -5,11 +5,21 @@ import AOS from "aos";
 
 const Sec6Wrap = styled.div`
   margin: 100px 0 200px 0;
+  width: 100%;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    padding: ${mainStyle.moPadding};
+  }
 `;
 const SecBoxWrap = styled.div`
   padding: ${mainStyle.padding};
   display: flex;
   justify-content: center;
+  @media screen and (max-width: 500px) {
+    padding: ${mainStyle.moPadding};
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 const Box = styled.div`
@@ -21,6 +31,11 @@ const Box = styled.div`
   cursor: pointer;
   :nth-child(1) {
     margin-right: 100px;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -35,6 +50,11 @@ const BlackBox = styled.div`
     .con {
       color: #fee600;
     }
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    height: 193px;
+    margin-bottom: 20px;
   }
 `;
 
@@ -51,6 +71,15 @@ const BoxCon = styled.div`
     font-size: 24px;
     font-weight: 700;
     line-height: 35px;
+  }
+  @media screen and (max-width: 500px) {
+    padding: 30px;
+    h3 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 20px;
+    }
   }
 `;
 
