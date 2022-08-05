@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/yujinkim11.github.io/paikdabang/static/css/main.2c17f451.css",
-    "main.js": "/yujinkim11.github.io/paikdabang/static/js/main.e88aac92.js",
-    "index.html": "/yujinkim11.github.io/paikdabang/index.html",
-    "main.2c17f451.css.map": "/yujinkim11.github.io/paikdabang/static/css/main.2c17f451.css.map",
-    "main.e88aac92.js.map": "/yujinkim11.github.io/paikdabang/static/js/main.e88aac92.js.map"
+    "main.css": "/paikdabang/static/css/main.2c17f451.css",
+    "main.js": "/paikdabang/static/js/main.ad8db6b8.js",
+    "index.html": "/paikdabang/index.html",
+    "main.2c17f451.css.map": "/paikdabang/static/css/main.2c17f451.css.map",
+    "main.ad8db6b8.js.map": "/paikdabang/static/js/main.ad8db6b8.js.map"
   },
   "entrypoints": [
     "static/css/main.2c17f451.css",
-    "static/js/main.e88aac92.js"
+    "static/js/main.ad8db6b8.js"
   ]
 }
